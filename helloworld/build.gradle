@@ -1,0 +1,10 @@
+task hallo {
+    doLast {
+        println 'hallo, '
+    }
+}
+task world(dependsOn:hallo){
+    doLast {
+        println "semangat"
+    }
+}

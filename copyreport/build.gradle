@@ -1,0 +1,6 @@
+task copyPdfReportsForArchiving (type: Copy) {
+    from "$buildDir/reports"
+    include "*.pdf"
+    into "$buildDir/toArchive"
+    doLast{println 'File berhasil dicopy..'}
+}

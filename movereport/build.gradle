@@ -1,0 +1,6 @@
+task moveReports {
+    doLast {
+        ant.move file: "${buildDir}/reports",
+                todir: "${buildDir}/toArchive"
+    }
+}

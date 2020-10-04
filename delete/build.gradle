@@ -1,0 +1,5 @@
+task cleanTempFiles(type: Delete) {
+    delete fileTree("src").matching {
+        include "**/*.tmp"
+    }
+}
